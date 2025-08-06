@@ -93,11 +93,85 @@ const PdfViewerComponent = forwardRef(({ id, document }, ref) => {
           }
         };
 
-        instance.addEventListener("annotations.create", saveChanges);
-        instance.addEventListener("annotations.delete", saveChanges);
-        instance.addEventListener("annotations.update", saveChanges);
-        instance.addEventListener("document.change", saveChanges);
-        instance.addEventListener("formFieldValues.update", saveChanges);
+        // instance.addEventListener("annotations.create", saveChanges);
+        // instance.addEventListener("annotations.delete", saveChanges);
+        // instance.addEventListener("annotations.update", saveChanges);
+        // instance.addEventListener("document.change", saveChanges);
+        // instance.addEventListener("formFieldValues.update", saveChanges);
+
+                const saveOnEvents = [
+          "viewState.change",
+          "viewState.currentPageIndex.change",
+          "viewState.zoom.change",
+          "annotationPresets.update",
+          "annotations.load",
+          "annotations.change",
+          "annotations.create",
+          "annotations.transform",
+          "annotations.update",
+          "annotations.delete",
+          "annotations.press",
+          "annotations.willSave",
+          "annotations.didSave",
+          "annotations.focus",
+          "annotations.blur",
+          "annotations.willChange",
+          "bookmarks.change",
+          "bookmarks.willSave",
+          "bookmarks.didSave",
+          "bookmarks.load",
+          "bookmarks.create",
+          "bookmarks.update",
+          "bookmarks.delete",
+          "comments.change",
+          "comments.willSave",
+          "comments.didSave",
+          "comments.load",
+          "comments.create",
+          "comments.update",
+          "comments.delete",
+          "document.change",
+          "document.saveStateChange",
+          "formFieldValues.update",
+          "formFieldValues.willSave",
+          "formFieldValues.didSave",
+          "formFields.load",
+          "formFields.change",
+          "formFields.create",
+          "formFields.update",
+          "formFields.delete",
+          "formFields.willSave",
+          "formFields.didSave",
+          "forms.willSubmit",
+          "forms.didSubmit",
+          "inkSignatures.create",
+          "inkSignatures.update",
+          "inkSignatures.delete",
+          "inkSignatures.change",
+          "storedSignatures.create",
+          "storedSignatures.update",
+          "storedSignatures.delete",
+          "storedSignatures.change",
+          "instant.connectedClients.change",
+          "textSelection.change",
+          "annotationSelection.change",
+          "page.press",
+          "textLine.press",
+          "search.stateChange",
+          "search.termChange",
+          "history.undo",
+          "history.redo",
+          "history.change",
+          "history.willChange",
+          "history.clear",
+          "cropArea.changeStart",
+          "cropArea.changeStop",
+          "documentComparisonUI.start",
+          "documentComparisonUI.end",
+        ];
+
+        instance.addEventListener(saveOnEvents, saveChanges);
+
       } catch (error) {
         console.error("Error loading NutrientViewer:", error);
       }
