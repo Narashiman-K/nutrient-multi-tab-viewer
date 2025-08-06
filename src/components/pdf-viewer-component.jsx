@@ -99,7 +99,7 @@ const PdfViewerComponent = forwardRef(({ id, document }, ref) => {
         // instance.addEventListener("document.change", saveChanges);
         // instance.addEventListener("formFieldValues.update", saveChanges);
 
-                const saveOnEvents = [
+        const saveOnEvents = [
           "viewState.change",
           "viewState.currentPageIndex.change",
           "viewState.zoom.change",
