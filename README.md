@@ -72,9 +72,9 @@ Close Tab: Click the "×" button on a tab to close it
 Save Changes: When closing a tab, you'll be prompted to save changes
 
 ## Demo:
-```
+
 https://github.com/user-attachments/assets/2d8d9a6e-c859-48b9-9d7e-d01d9f2542ab
-```
+
 
 ### Data Persistence
 All documents and annotations are automatically saved to browser localStorage
