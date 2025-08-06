@@ -41,6 +41,7 @@ npm run dev
 The application will be available at http://localhost:5174
 
 ## 📁 Project Structure
+```
 nutrient-multi-tab-viewer/
 ├── public/
 ├── src/
@@ -55,7 +56,7 @@ nutrient-multi-tab-viewer/
 ├── package.json
 ├── vite.config.js
 └── README.md
-
+```
 
 ## 🎯 Usage
 Opening Documents
@@ -70,16 +71,10 @@ Switch Tabs: Click on any tab to switch between documents
 Close Tab: Click the "×" button on a tab to close it
 Save Changes: When closing a tab, you'll be prompted to save changes
 
-### Document Features
-Each PDF viewer includes the full Nutrient toolbar with:
-
-- Text annotations and highlighting
-- Drawing and shapes
-- Form filling
-- Digital signatures
-- Comments and notes
-- Measurement tools
-- Document editing capabilities
+## Demo:
+```
+https://github.com/user-attachments/assets/2d8d9a6e-c859-48b9-9d7e-d01d9f2542ab
+```
 
 ### Data Persistence
 All documents and annotations are automatically saved to browser localStorage
@@ -110,19 +105,23 @@ Modify src/app.css to customize the application appearance:
 - Responsive breakpoints
 
 ## 🏗️ Building for Production
-```npm run build```
+```
+npm run build
+```
 
 This creates an optimized production build in the dist folder.
 Preview Production Build
-```npm run preview```
+```
+npm run preview
+```
 
 ## 🔧 Troubleshooting
-### Document not loading
+#### Document not loading
 - Ensure the PDF file is not corrupted
 - Check browser console for errors
 - Verify Nutrient SDK is loaded correctly
 
-### License key issues
+#### License key issues
 - Verify your license key is correctly set in .env
 - Ensure the domain is whitelisted in your Nutrient account
 
