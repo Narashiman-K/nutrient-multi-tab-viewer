@@ -15,21 +15,29 @@ npm or yarn package manager
 Nutrient/PSPDFKit license key (optional for evaluation)
 
 ## 🚀 Quick Start
-1. Clone the repository
-```git clone nutrient-multi-tab-viewer
-cd nutrient-multi-tab-viewer```
-2. Install dependencies
-```npm install```
-3. Set up environment variables
-```Create a .env file in the root directory: 
-VITE_lkey=YOUR_NUTRIENT_LICENSE_KEY```
 
+1. Clone the repository
+```
+git clone nutrient-multi-tab-viewer
+cd nutrient-multi-tab-viewer
+```
+
+2. Install dependencies
+```
+npm install
+```
+
+3. Set up environment variables
+```
+Create a .env file in the root directory: 
+VITE_lkey=YOUR_NUTRIENT_LICENSE_KEY
+```
 Note: The application works without a license key in evaluation mode with watermarks.
 
 4. Run the development server
-
-```npm run dev```
-
+```
+npm run dev
+```
 The application will be available at http://localhost:5174
 
 ## 📁 Project Structure
